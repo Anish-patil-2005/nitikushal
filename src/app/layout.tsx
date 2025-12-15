@@ -8,9 +8,63 @@ import Footer from '@/components/layout/Footer'; // We will create this next
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Nitikushal NGO | Empowering Communities",
-  description: "Nitikushal is dedicated to sustainable development, community welfare, and environmental action.",
-  keywords: ["NGO", "Nitikushal", "Charity", "Social Work", "Green Initiative"],
+  metadataBase: new URL('https://nitikushal.in'), // REPLACE with your actual domain later
+  
+  title: {
+    default: "Niti Kushal | Empowering Communities",
+    template: "%s | Niti Kushal" // e.g., "Projects | Niti Kushal"
+  },
+  
+  description: "Niti Kushal is a non-profit organization dedicated to sustainable development, education, and healthcare in rural India. Join us in creating a better tomorrow.",
+  
+  keywords: [
+    "NGO", 
+    "Non-profit", 
+    "India", 
+    "Rural Development", 
+    "Education", 
+    "Healthcare", 
+    "Women Empowerment", 
+    "Niti Kushal", 
+    "Social Work"
+  ],
+
+  authors: [{ name: "Niti Kushal Team" }],
+  
+  creator: "Niti Kushal",
+
+  // SETTINGS FOR SOCIAL MEDIA SHARING (Facebook, LinkedIn, WhatsApp)
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://nitikushal.org",
+    title: "Niti Kushal | Empowering Communities",
+    description: "Driving change through education, healthcare, and sustainable livelihood initiatives across India.",
+    siteName: "Niti Kushal",
+    images: [
+      {
+        url: "/opengraph-image.png", // We will add this image next
+        width: 1200,
+        height: 630,
+        alt: "Niti Kushal - Building a Better Tomorrow",
+      },
+    ],
+  },
+
+  // SETTINGS FOR TWITTER CARDS
+  twitter: {
+    card: "summary_large_image",
+    title: "Niti Kushal | Empowering Communities",
+    description: "Driving change through education, healthcare, and sustainable livelihood initiatives.",
+    images: ["/opengraph-image.png"], // Same image as above
+  },
+
+  // ICONS (Favicon)
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
