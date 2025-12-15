@@ -1,0 +1,30 @@
+src/ (or root if not using src directory)
+├── app/                        # App Router Pages
+│   ├── layout.tsx              # Global Layout (Navbar + Footer go here)
+│   ├── page.tsx                # HOME Page (Hero, Highlights)
+│   ├── about/
+│   │   └── page.tsx            # ABOUT US Page
+│   ├── projects/
+│   │   └── page.tsx            # OUR WORK / PROJECTS Page
+│   ├── updates/
+│   │   └── page.tsx            # UPDATES / ANNOUNCEMENTS Page
+│   ├── gallery/
+│   │   └── page.tsx            # GALLERY / MEDIA Page
+│   ├── contact/
+│   │   └── page.tsx            # CONTACT US Page
+│   └── team/
+│       └── page.tsx            # OUR TEAM Page
+├── components/                 # Reusable React Components
+│   ├── layout/                 # Navbar, Footer
+│   │   ├── Navbar.tsx
+│   │   └── Footer.tsx
+│   ├── home/                   # Components specific to Home
+│   │   ├── Hero.tsx
+│   │   └── KeyInitiatives.tsx
+│   ├── ui/                     # Generic UI (Buttons, Cards, Inputs)
+│   │   ├── Button.tsx
+│   │   └── SectionWrapper.tsx
+│   └── shared/                 # Components used across multiple pages
+│       └── ProjectCard.tsx
+└── lib/                        # Utilities (optional)
+    └── utils.ts                # Helper functions (e.g., for Tailwind classes)
