@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://nitikushal.in'), // REPLACE with your actual domain later
   
   title: {
-    default: "Niti Kushal | Empowering Communities",
+    default: "NitiKushal | Empowering Communities | Niti Kushal",
     template: "%s | Niti Kushal" // e.g., "Projects | Niti Kushal"
   },
   
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://nitikushal.org",
+    url: "https://nitikushal.in",
     title: "Niti Kushal | Empowering Communities",
     description: "Driving change through education, healthcare, and sustainable livelihood initiatives across India.",
     siteName: "Niti Kushal",

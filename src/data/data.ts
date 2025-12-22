@@ -66,7 +66,7 @@ export const projectsData = [
     year: "2024",
     description: "Setting up computer labs in 5 rural government schools to bridge the digital divide for over 1,000 students.",
     details: "In today's digital age, computer literacy is not a luxury but a necessity. Project Vidya aims to bridge the stark digital divide in rural sectors. We have successfully set up fully functional computer labs equipped with high-speed internet, modern desktops, and projectors in 5 government schools. Beyond hardware, we have introduced a comprehensive curriculum covering basic computing, coding for kids, and safe internet usage, empowering over 1,000 students to compete in the modern world.",
-    image: "/project_image/project1.jpg", 
+    image: "/project_image/project.png", 
     status: "Ongoing"
   },
   {
@@ -76,7 +76,7 @@ export const projectsData = [
     year: "2023",
     description: "Installed 20 heavy-duty water purifiers in drought-affected villages, reducing waterborne diseases by 40%.",
     details: "Access to clean drinking water remains a critical challenge in many remote villages. Our 'Clean Water for All' initiative targeted the drought-prone districts where waterborne diseases were rampant. We installed 20 industrial-grade RO water purifiers and established community water committees to ensure maintenance. Post-installation surveys indicate a 40% drop in reported cases of typhoid and cholera, significantly improving the overall health index of these communities.",
-    image: "/project_image/project2.jpg", 
+    image: "/project_image/project.png", 
     status: "Completed"
   },
   {
@@ -86,7 +86,7 @@ export const projectsData = [
     year: "2023",
     description: "Training 500 women in handicrafts and tailoring, enabling them to start their own micro-businesses.",
     details: "Financial independence is the first step towards empowerment. This project focused on upskilling women from low-income households. Over the course of 6 months, we provided intensive training in tailoring, embroidery, and local handicrafts to 500 women. Furthermore, we helped them establish market linkages to sell their products. Today, 60% of these women have started their own micro-businesses, contributing significantly to their household income and self-esteem.",
-    image: "/project_image/project3.jpg", 
+    image: "/project_image/project.png", 
     status: "Completed"
   }
 ];
@@ -96,30 +96,30 @@ export const teamData = [
   {
     name: "Nandan Londhe",
     role: "Founder & President",
-    image: "", 
-    linkedin: "https://linkedin.com",
-    bio: "Leading with compassion for over 10 years."
+    image: "/team_image/nandan_londhe.jpeg", 
+    linkedin: "https://www.linkedin.com/in/nandanlondhe/",
+    bio: "Leading with compassion for over 6 years."
   },
   {
-    name: "Rahul Verma",
+    name: "ABC",
     role: "Director of Operations",
-    image: "",
+    image: "/team_image/profile_image.png",
     linkedin: "https://linkedin.com",
     bio: "Ensuring every project reaches its goal."
   },
   {
-    name: "Priya Singh",
+    name: "XYZ",
     role: "Community Outreach Head",
-    image: "",
-    linkedin: "", 
+    image: "/team_image/profile_image.png",
+    linkedin: "https://linkedin.com", 
     bio: "Connecting resources with those in need."
   },
   {
-    name: "Amit Patel",
-    role: "Volunteer Coordinator",
-    image: "",
-    linkedin: "https://linkedin.com",
-    bio: "Managing our strength: our volunteers."
+    name: "Anish Patil",
+    role: "Technical Lead",
+    image: "/team_image/anish_patil.jpg",
+    linkedin: "https://www.linkedin.com/in/anish-patil-256269281/",
+    bio: "Leading technology decisions with a focus on clean architecture, scalability, and impact."
   },
 ];
 
