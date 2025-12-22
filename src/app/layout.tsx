@@ -26,12 +26,13 @@ export const metadata: Metadata = {
     "Healthcare", 
     "Women Empowerment", 
     "Niti Kushal", 
+    "nitikushal", 
     "Social Work"
   ],
 
-  authors: [{ name: "Niti Kushal Team" }],
+  authors: [{ name: "Nitikushal Team" }],
   
-  creator: "Niti Kushal",
+  creator: "Nitikushal",
 
   // SETTINGS FOR SOCIAL MEDIA SHARING (Facebook, LinkedIn, WhatsApp)
   openGraph: {

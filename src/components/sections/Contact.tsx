@@ -177,13 +177,13 @@ export default function Contact({ id }: { id: string }) {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
-                    <input name="name" type="text" required placeholder="John Doe" value={formData.name} onChange={handleChange}
+                    <input name="name" type="text" required placeholder="FirstName LastName" value={formData.name} onChange={handleChange}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all bg-gray-50 focus:bg-white"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                    <input name="email" type="email" required placeholder="john@example.com" value={formData.email} onChange={handleChange}
+                    <input name="email" type="email" required placeholder="firstlast@example.com" value={formData.email} onChange={handleChange}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all bg-gray-50 focus:bg-white"
                     />
                   </div>
