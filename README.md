@@ -1,36 +1,155 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 Nitikushal Organization – Official Website
 
-## Getting Started
+Nitikushal is a purpose-driven non-governmental organization committed to social development, public awareness, research, and data-driven impact initiatives.  
+This repository contains the source code for the **official Nitikushal NGO website**, built with modern web technologies for performance, accessibility, and scalability.
 
-First, run the development server:
+---
+
+## 🚀 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Frontend:** React
+- **Styling:** Tailwind CSS (Custom Green & White Theme)
+- **Fonts:** Poppins (Headings), Inter (Body)
+- **Deployment:** Vercel
+- **SEO:** Next.js Metadata, optimized routing
+
+---
+
+## 🎯 Project Goals
+
+- Present Nitikushal’s vision, mission, and initiatives
+- Provide structured data, analysis, and interpretation
+- Ensure fast loading, SEO-friendly pages
+- Maintain a clean, accessible, and scalable UI
+- Serve as a long-term official digital presence
+
+---
+
+## 📁 Folder Structure
+
+```bash
+src
+├── app
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components
+│   ├── layout
+│   │   ├── Footer.tsx
+│   │   └── Navbar.tsx
+│   │
+│   ├── sections
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Updates.tsx
+│   │   ├── Gallery.tsx
+│   │   ├── Team.tsx
+│   │   └── Contact.tsx
+│   ├── ui
+│     ├── Button.tsx
+|     ├── Card.tsx
+│     └── SectionTitle.tsx
+│
+├── data
+│   └── data.ts
+│
+├── lib
+│   └── utils.ts
+
+````
+
+---
+
+## 🖌️ Design System
+
+* **Primary Color:** Green (Trust, Growth, Sustainability)
+* **Secondary Accents:** Forest tones
+* **Typography:**
+
+  * Headings → Poppins
+  * Body → Inter
+* **UI Philosophy:** Minimal, accessible, NGO-friendly
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/nitikushal.git
+cd nitikushal
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌍 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The project is optimized for **Vercel deployment**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Connect the repository to Vercel for continuous deployment.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔍 SEO Strategy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Semantic HTML structure
+* Next.js metadata configuration
+* Optimized page routing
+* Fast loading and accessibility compliance
+
+SEO will be enhanced further after final design completion.
+
+---
+
+## 🤝 Contribution Guidelines
+
+This is an official NGO website.
+For suggestions or improvements:
+
+* Open an issue
+* Submit a pull request
+* Follow clean code and accessibility standards
+
+---
+
+## 📜 License
+
+This project is owned and maintained by **Nitikushal NGO**.
+All rights reserved unless explicitly stated.
+
+---
+
+## 🙌 Acknowledgements
+
+Built with a vision to create impact through technology and transparency.
+
+**Nitikushal – Empowering change through knowledge and action.**
+
+```
