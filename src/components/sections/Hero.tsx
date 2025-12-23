@@ -25,7 +25,7 @@ export default function Hero({ id }: { id: string }) {
 
   return (
     <section 
-      id={id} 
+      id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-emerald-50 via-white to-white pt-16"
     >
       
@@ -105,7 +105,7 @@ export default function Hero({ id }: { id: string }) {
             {/* Main Hero Image Frame */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-200 aspect-square rotate-2 hover:rotate-0 transition-transform duration-500">
                <Image 
-                 src="/hero.png" 
+                 src={heroData.image}
                  alt="Nitikushal NGO Volunteers" 
                  fill
                  priority 

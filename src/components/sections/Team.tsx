@@ -22,7 +22,7 @@ export default function Team({ id }: { id: string }) {
   };
 
   return (
-    <section id={id} className="py-24 bg-slate-50">
+    <section id="team" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* SECTION HEADER */}
@@ -85,14 +85,13 @@ export default function Team({ id }: { id: string }) {
       <div className="p-6 text-center relative">
         {member.linkedin && (
           <div className="absolute -top-5 right-6">
-            <a 
-              href={member.linkedin} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-emerald-600 text-white p-2.5 rounded-full shadow-lg hover:bg-emerald-700 transition-colors flex items-center justify-center scale-0 group-hover:scale-100 duration-300"
-              title="Connect on LinkedIn"
-            >
-              <Linkedin size={18} />
+<a 
+      href={member.linkedin} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      title="Connect on LinkedIn"
+      className="bg-emerald-600 text-white p-2.5 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 scale-100  md:scale-0 md:group-hover:scale-100   hover:bg-emerald-700active:scale-90"
+    >              <Linkedin size={18} />
             </a>
           </div>
         )}

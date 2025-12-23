@@ -9,7 +9,7 @@ import {
 
 // --- NAVIGATION ---
 export const navLinks = [
-  { name: 'Home', href: '#hero' },
+  { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Projects', href: '#projects' },
   { name: 'Team', href: '#team' },
@@ -21,6 +21,7 @@ export const navLinks = [
 export const heroData = {
   tagline: "Empowering Communities since 2024",
   headline: "Small Actions, Big Impact.",
+  image: "/hero_image/hero.jpg", 
   subheadline: "Nitikushal is dedicated to sustainable development, environmental care, and uplifting the lives of the underprivileged through direct action.",
   stats: [
     { value: "50+", label: "Projects Done" },

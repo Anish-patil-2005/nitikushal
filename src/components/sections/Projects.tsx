@@ -29,7 +29,7 @@ export default function Projects({ id }: { id: string }) {
   };
 
   return (
-    <section id={id} className="py-24 bg-slate-50 relative">
+    <section id="projects" className="py-24 bg-slate-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* SECTION HEADER */}
