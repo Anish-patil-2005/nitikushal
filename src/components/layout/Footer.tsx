@@ -1,4 +1,6 @@
 import { Facebook, Twitter, Instagram, Youtube, Mail, MapPin, Phone } from 'lucide-react';
+import { contactData } from '@/data/data'; 
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -45,17 +47,18 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="text-emerald-500 shrink-0 mt-1" size={18} />
                 <span>
-                  123 NGO Street, Civil Lines,<br />
-                  New Delhi, India - 110001
+                  {contactData.address.line1}<br />
+                  {contactData.address.line2} <br />
+                  {contactData.address.line3}
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-emerald-500 shrink-0" size={18} />
-                <span>+91 97630 58066</span>
+                <span>{contactData.phone}</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-emerald-500 shrink-0" size={18} />
-                <span>connect.nitikushal@gmail.com</span>
+                <span>{contactData.email[0]}</span>
               </li>
             </ul>
           </div>

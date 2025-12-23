@@ -137,7 +137,8 @@ export default function Contact({ id }: { id: string }) {
                 </div>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   {contactData.address.line1}<br />
-                  {contactData.address.line2}
+                  {contactData.address.line2} <br />
+                  {contactData.address.line3}
                 </p>
                 <div className="w-full h-48 bg-gray-200 rounded-xl overflow-hidden shadow-inner">
                   <iframe 

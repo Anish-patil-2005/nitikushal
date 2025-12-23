@@ -19,7 +19,7 @@ export const navLinks = [
 
 // --- HERO SECTION ---
 export const heroData = {
-  tagline: "Empowering Communities since 2014",
+  tagline: "Empowering Communities since 2024",
   headline: "Small Actions, Big Impact.",
   subheadline: "Nitikushal is dedicated to sustainable development, environmental care, and uplifting the lives of the underprivileged through direct action.",
   stats: [
@@ -94,32 +94,39 @@ export const projectsData = [
 // --- TEAM SECTION ---
 export const teamData = [
   {
-    name: "Nandan Londhe",
-    role: "Founder & President",
-    image: "/team_image/nandan_londhe.jpeg", 
+    name: "Avijit",
+    role: "Co-Founder",
+    image: "/team_image/avijit.jpg", 
+    linkedin: "https://www.linkedin.com/in/avijit-mahato-6a12b11a2/",
+    // bio: "Leading with compassion for over 6 years."
+  },
+  {
+    name: "Nandan",
+    role: "Co-Founder",
+    image: "/team_image/nandan.jpg", 
     linkedin: "https://www.linkedin.com/in/nandanlondhe/",
-    bio: "Leading with compassion for over 6 years."
+    // bio: "Leading with compassion for over 6 years."
   },
   {
-    name: "ABC",
-    role: "Director of Operations",
-    image: "/team_image/profile_image.png",
-    linkedin: "https://linkedin.com",
-    bio: "Ensuring every project reaches its goal."
+    name: "Divya",
+    role: "Co-Founder",
+    image: "/team_image/divya.jpg", 
+    linkedin: "https://www.linkedin.com/in/divya-j-b47536211/",
+    // bio: "Leading with compassion for over 6 years."
   },
   {
-    name: "XYZ",
-    role: "Community Outreach Head",
-    image: "/team_image/profile_image.png",
-    linkedin: "https://linkedin.com", 
-    bio: "Connecting resources with those in need."
+    name: "Isani",
+    role: "Co-Founder",
+    image: "/team_image/isani.jpg", 
+    linkedin: "https://www.linkedin.com/in/isani-mukherjee-583117274/",
+    // bio: "Leading with compassion for over 6 years."
   },
   {
-    name: "Anish Patil",
+    name: "Anish",
     role: "Technical Lead",
     image: "/team_image/anish_patil.jpg",
     linkedin: "https://www.linkedin.com/in/anish-patil-256269281/",
-    bio: "Leading technology decisions with a focus on clean architecture, scalability, and impact."
+    // bio: "Leading technology decisions with a focus on clean architecture, scalability, and impact."
   },
 ];
 
@@ -152,8 +159,9 @@ export const contactData = {
   phone: ["+91 97630 58066"],
   email: ["connect.nitikushal@gmail.com"],
   address: {
-    line1: "123, NGO Sector, Civil Lines,",
-    line2: "New Delhi, India - 110001"
+    line1: "Registered Office: ",
+    line2: "Nitikushal Foundation, Vimal Apartment, Homi Bhabha Nagar",
+    line3: "Dwarka Corner, Nashik, Maharashtra, India–422011"
   },
   // This is a Google Maps Embed link for New Delhi. 
   // You can generate your specific location link from Google Maps -> Share -> Embed a map.

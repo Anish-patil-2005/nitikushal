@@ -56,68 +56,56 @@ export default function Team({ id }: { id: string }) {
         </div>
 
         {/* TEAM GRID */}
-        <motion.div 
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-        >
-          {teamData.map((member, index) => (
-            <motion.div 
-              key={index}
-              variants={itemVariants}
-              whileHover={{ y: -10 }}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100"
+       <motion.div 
+  variants={containerVariants}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8"
+>
+  {teamData.map((member, index) => (
+    <motion.div 
+      key={index}
+      variants={itemVariants}
+      whileHover={{ y: -10 }}
+      className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100"
+    >
+      {/* IMAGE CONTAINER */}
+      <div className="relative h-64 w-full bg-gray-200 overflow-hidden">
+        <Image 
+          src={member.image} 
+          alt={member.name}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      </div>
+
+      {/* TEXT CONTENT */}
+      <div className="p-6 text-center relative">
+        {member.linkedin && (
+          <div className="absolute -top-5 right-6">
+            <a 
+              href={member.linkedin} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-emerald-600 text-white p-2.5 rounded-full shadow-lg hover:bg-emerald-700 transition-colors flex items-center justify-center scale-0 group-hover:scale-100 duration-300"
+              title="Connect on LinkedIn"
             >
-              
-              {/* IMAGE CONTAINER */}
-              <div className="relative h-64 w-full bg-gray-200 overflow-hidden">
-                
-                {/* ACTIVE IMAGE COMPONENT */}
-                {/* Ensure paths in data.ts match your public folder structure */}
-                <Image 
-                  src={member.image} 
-                  alt={member.name}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </div>
+              <Linkedin size={18} />
+            </a>
+          </div>
+        )}
 
-              {/* TEXT CONTENT */}
-              <div className="p-6 text-center relative">
-                
-                {/* Floating LinkedIn Button */}
-                {member.linkedin && (
-                  <div className="absolute -top-5 right-6">
-                    <a 
-                      href={member.linkedin} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="bg-emerald-600 text-white p-2.5 rounded-full shadow-lg hover:bg-emerald-700 transition-colors flex items-center justify-center scale-0 group-hover:scale-100 duration-300"
-                      title="Connect on LinkedIn"
-                    >
-                      <Linkedin size={18} />
-                    </a>
-                  </div>
-                )}
+        <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
+        <p className="text-emerald-600 font-medium text-sm mb-3 uppercase tracking-wide">
+          {member.role}
+        </p>
+      </div>
+    </motion.div>
+  ))}
+</motion.div>
 
-                <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
-                <p className="text-emerald-600 font-medium text-sm mb-3 uppercase tracking-wide">
-                  {member.role}
-                </p>
-                
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  {member.bio}
-                </p>
-              </div>
-
-            </motion.div>
-          ))}
-        </motion.div>
 
       </div>
     </section>
