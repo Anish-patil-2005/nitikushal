@@ -28,22 +28,32 @@ export default function Navbar() {
   }, []);
 
   // Smooth Scroll Handler
-  const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
+    
+    // 1. Close the menu immediately
     setIsOpen(false);
     
-    const element = document.querySelector(href);
-    if (element) {
-      // Offset for fixed header (64px/4rem)
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+    // 2. Small delay to let the Framer Motion "AnimatePresence" 
+    // finish closing the menu so it doesn't block the scroll.
+    setTimeout(() => {
+      const targetId = href.replace('#', '');
+      const element = document.getElementById(targetId);
+      
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+        
+        // Update URL hash without a jump
+        window.history.pushState(null, '', href);
+      }
+    }, 10); // 10ms is enough to unblock the main thread
   };
 
   return (
@@ -54,7 +64,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           
           {/* LOGO */}
-          <Link 
+          <a 
             href="#home" 
             onClick={(e) => handleScrollTo(e, '#home')} 
             className="flex items-center gap-2"
@@ -66,7 +76,7 @@ export default function Navbar() {
             <span className="text-2xl font-bold text-gray-800 tracking-tight">
               Nitikushal
             </span>
-          </Link>
+          </a>
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center space-x-8">

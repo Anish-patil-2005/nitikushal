@@ -25,7 +25,7 @@ export default function Hero({ id }: { id: string }) {
 
   return (
     <section 
-      id="home"
+      id={id}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-emerald-50 via-white to-white pt-16"
     >
       

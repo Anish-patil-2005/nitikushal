@@ -22,7 +22,7 @@ export default function Team({ id }: { id: string }) {
   };
 
   return (
-    <section id="team" className="py-24 bg-slate-50">
+    <section id={id} className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* SECTION HEADER */}

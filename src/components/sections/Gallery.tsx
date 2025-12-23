@@ -10,7 +10,7 @@ const marqueeImages = [...galleryData, ...galleryData];
 
 export default function Gallery({ id }: { id: string }) {
   return (
-    <section id="gallery" className="py-24 bg-emerald-50/50 overflow-hidden">
+    <section id={id} className="py-24 bg-emerald-50/50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center">
         {/* SECTION HEADER */}
         <motion.div
