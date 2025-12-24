@@ -140,14 +140,18 @@ export default function Contact({ id }: { id: string }) {
                   {contactData.address.line2} <br />
                   {contactData.address.line3}
                 </p>
-                <div className="w-full h-48 bg-gray-200 rounded-xl overflow-hidden shadow-inner">
-                  <iframe 
-                    src={contactData.mapUrl}
-                    width="100%" height="100%" style={{ border: 0 }} 
-                    allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-                    title="Google Map"
-                  ></iframe>
-                </div>
+                <div className="w-full h-56 md:h-72 bg-gray-200 rounded-xl overflow-hidden shadow-inner">
+  <iframe
+    src={contactData.mapUrl}
+    className="w-full h-full"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Nitikushal Foundation Location"
+  />
+</div>
+
             </div>
           </motion.div>
 
