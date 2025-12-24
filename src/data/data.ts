@@ -166,9 +166,9 @@ export const contactData = {
   },
   // This is a Google Maps Embed link for New Delhi. 
   // You can generate your specific location link from Google Maps -> Share -> Embed a map.
-  mapUrl: "https://maps.app.goo.gl/qGqntQfoPRUvbUeY8"};
+  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.4807158365415!2d73.78826874189973!3d19.986794042055926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb000124e499%3A0x7a89f7ce7e6b3160!2sVimal%20Apartment!5e0!3m2!1sen!2sin!4v1766553486022!5m2!1sen!2sin" 
 
-
+};
 
 // updatesdata
 export const updatesData = [
